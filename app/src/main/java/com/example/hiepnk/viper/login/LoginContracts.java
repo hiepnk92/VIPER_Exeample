@@ -14,8 +14,6 @@ public class LoginContracts {
     }
 
     interface Presenter {
-        void onUnsubcribe();
-
 
         /* event click button login
                  send request from View to Presenter*/
@@ -27,7 +25,6 @@ public class LoginContracts {
                  send data from Presenter to Interactor to validate*/
         void login(String username, String password);
 
-        void unregister();
     }
 
     interface InteractorResult {
@@ -42,7 +39,6 @@ public class LoginContracts {
 /*
         Handles routing to other views in the app
 */
-        void unregister();
         void presentHomeScreen(User user);
     }
 }

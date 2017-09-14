@@ -17,12 +17,6 @@ public class LoginRouter implements LoginContracts.Router {
     }
 
     @Override
-    public void unregister() {
-        activity=null;
-
-    }
-
-    @Override
     public void presentHomeScreen(User user) {
         Intent intent = new Intent(activity, MainActivity.class);
         intent.putExtra("name", user.getUsername());

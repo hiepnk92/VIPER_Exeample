@@ -23,10 +23,4 @@ public class LoginInteractor implements LoginContracts.Interactor {
         }
 
     }
-
-    @Override
-    public void unregister() {
-        interactorResult =null;
-
-    }
 }

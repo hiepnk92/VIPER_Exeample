@@ -19,17 +19,6 @@ public class LoginPresenter implements LoginContracts.Presenter, LoginContracts.
     }
 
     @Override
-    public void onUnsubcribe() {
-        mView =null;
-        router.unregister();
-        interactor.unregister();
-
-
-
-
-    }
-
-    @Override
     public void onLoginButtonClicked(String username, String password) {
         interactor.login(username, password);
 
